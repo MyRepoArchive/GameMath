@@ -1,0 +1,16 @@
+nav#navbar {
+    margin-left: -8px;
+    font-size: 1.2em;
+    width: max-content;
+    padding: 20px 120px 20px 20px;
+    background: repeating-linear-gradient(135deg, white, white 69%, rgba(0,0,0,0) 1px, rgba(0,0,0,0) 100%);
+}
+h1#corpoTitulo {
+    padding-right: 80px;
+}
+div#conteudo {
+    text-align: justify;
+    padding: 5%;
+    padding-left: 8%;
+    font-size: 1.2em;
+}

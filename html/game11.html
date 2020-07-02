@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MathGame - Jogar</title>
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" href="../css/game.css">
+</head>
+<body>
+    <header id="cabecalhoBackground"></header>
+    <header id="cabecalho">
+        <div id="niveis" class="cabecalhoButtons" onclick="menu()">|||</div>
+        <div id="tipoCalculo" class="cabecalhoButtons">+</div>
+        <h1 id="nomeSite"><a href="../index.html"><span>M</span>ath<span>G</span>ame</a></h1>
+        <div id="cronometroLine"></div>
+    </header>
+
+    <aside id="menu">
+        <div id="dificuldadeMenu" class="menuItem" onclick="dificuldadeMenu()"><h3>Dificuldade<div id="seta">&#62;</div></h3></div>
+        <a href="regras.html"><div class="menuItem" id="regrasMenu"><h3>Regras</h3></div></a>
+        <div id="escolhaDificuldadeMenu">
+            <a href="" id="linkEscDifMenuFacil" class="linkEscDifMenu"><div class="escolhaDificuldadeMenu" id="escDifMenuFacil"><h4>Fácil</h4></div></a>
+            <a href="" id="linkEscDifMenuMedio" class="linkEscDifMenu"><div class="escolhaDificuldadeMenu" id="escDifMenuMedio"><h4>Medio</h4></div></a>
+            <a href="" id="linkEscDifMenuDificil" class="linkEscDifMenu"><div class="escolhaDificuldadeMenu" id="escDifMenuDificil"><h4>Dificil</h4></div></a>
+        </div>
+    </aside>
+
+    <nav id="navbar">Home - Jogar</nav>
+
+    <section id="corpo">
+        <h1 id="corpoTitulo">Jogar</h1>
+        <div id="conteudo">
+            <div id="botaoIniciar" onclick="iniciarGame()"></div>
+            <div class="linhaVertical">|</div>
+            <div id="segundoNumero" onclick="ativarCronometro()"></div><br>
+        </div>
+    </section>
+
+    <script src="../javascript/script.js"></script>
+    <script src="../javascript/game.js"></script>
+</body>
+</html>

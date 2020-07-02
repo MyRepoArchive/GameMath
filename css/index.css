@@ -1,0 +1,62 @@
+nav#navbar {
+    margin-left: -8px;
+    font-size: 1.2em;
+    width: max-content;
+    padding: 20px 80px 20px 20px;
+    background: repeating-linear-gradient(135deg, white, white 69%, rgba(0,0,0,0) 1px, rgba(0,0,0,0) 100%);
+}
+div.selectDificuldade {
+    color: white;
+    text-shadow: 0px 0px 5px black;
+    height: 120px;
+    width: 180px;
+    padding: 30px;
+    background: grey;
+    border-radius: 5px;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: inline-block;
+    margin-bottom: 5%;
+    border: 2px solid rgba(0,0,0,0);
+}
+div.selectDificuldade:hover {
+    color: rgba(0, 0, 0, 0.5);
+}
+div#selDifFacil {background: rgb(0, 187, 0);}
+div#selDifMedio {background: rgb(255, 217, 0);}
+div#selDifDificil {background: red;}
+div.selectCalculo {
+    color: white;
+    text-shadow: 0px 0px 5px black;
+    height: 120px;
+    width: 140px;
+    padding: 30px;
+    background: grey;
+    border-radius: 5px;
+    margin-left: 3%;
+    margin-right: 3%;
+    display: inline-block;
+    margin-bottom: 5%;
+    border: 2px solid rgba(0,0,0,0);
+}
+div.selectCalculo:hover {
+    color: rgba(0, 0, 0, 0.5);
+}
+div.selectCalculo h1 {
+    font-size: 3em;
+    margin: 0;
+}
+a#linkButtonIr {
+    text-decoration: none;
+}
+div#buttonIr {
+    color: white;
+    padding: 10px;
+    background: rgb(134, 223, 0);
+}
+div#buttonIr:hover {
+    background: rgb(153, 255, 0);
+}
+div#buttonIr:active {
+    background: rgb(180, 255, 68);
+}

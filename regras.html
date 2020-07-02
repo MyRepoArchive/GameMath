@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MathGame - Regras</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/regras.css">
+</head>
+<body>
+    <header id="cabecalhoBackground"></header>
+    <header id="cabecalho">
+        <div id="niveis" class="cabecalhoButtons" onclick="menu()">|||</div>
+        <!--<div id="tipoCalculo" class="cabecalhoButtons">+</div>-->
+        <h1 id="nomeSite"><a href="index.html"><span>M</span>ath<span>G</span>ame</a></h1>
+    </header>
+
+    <aside id="menu">
+        <!--<div id="dificuldadeMenu" class="menuItem" onclick="dificuldadeMenu()"><h3>Dificuldade<div id="seta">&#62;</div></h3></div>-->
+        <a href="regras.html"><div class="menuItem" id="regrasMenu"><h3>Regras</h3></div></a>
+        <!--<div id="escolhaDificuldadeMenu">
+            <a href="" id="linkEscDifMenuFacil" class="linkEscDifMenu"><div class="escolhaDificuldadeMenu" id="escDifMenuFacil"><h4>Fácil</h4></div></a>
+            <a href="" id="linkEscDifMenuMedio" class="linkEscDifMenu"><div class="escolhaDificuldadeMenu" id="escDifMenuMedio"><h4>Medio</h4></div></a>
+            <a href="" id="linkEscDifMenuDificil" class="linkEscDifMenu"><div class="escolhaDificuldadeMenu" id="escDifMenuDificil"><h4>Dificil</h4></div></a>
+        </div>-->
+    </aside>
+
+    <nav id="navbar">Home - Regras</nav>
+
+    <section id="corpo">
+        <h1 id="corpoTitulo">Regras</h1>
+        <div id="conteudo">
+            <p>&bull; Primeiramente você deve selecionar a dificuldade e o tipo de calculo que você deve fazer.
+                <p>&emsp;&bull; A dificuldade vai mudar a quantidade de opções de resposta que você vai ter ao fazer um calculo durante o jogo.
+                    <p>&emsp;&emsp;&bull; No nível fácil, aparecem apenas 2 opções de resposta, uma delas é a correta e a outra é incorreta.</p>
+                    <p>&emsp;&emsp;&bull; No nível medio, aparecem 3 opções, e apenas uma delas é correta, as outras serão incorretas.</p>
+                    <p>&emsp;&emsp;&bull; No difícil, aparecem 5 opções, uma delas é correta e o resto são opções incorretas.</p>
+                </p>
+                <p>&emsp;&bull; O tipo de Calculo pode ser de quatro tipos.
+                    <p>&emsp;&emsp;&bull; Adição: todos os calculos que você deverá fazer durante o jogo será de soma.</p>
+                    <p>&emsp;&emsp;&bull; Subtração: todos os calculos que você deverá fazer durante o jogo será de subtração.</p>
+                    <p>&emsp;&emsp;&bull; Multiplicação: todos os calculos que você deverá fazer durante o jogo será de multiplicação.</p>
+                    <p>&emsp;&emsp;&bull; Divisão: todos os calculos que você deverá fazer durante o jogo será de divisão.</p>
+                </p>
+            </p>
+            <p>&bull; Em qualquer uma das dificuldades e tipo de calculo o objetivo final é apenas um, selecionar sempre os resultados corretos o máximo de tempo possível!</p>
+            <p>&bull; Para iniciar o jogo, você vai clicar em um número que deve aparecer na tela, ao clica-lo aparecerá um outro número que você deve clicar novamente - o primeiro e o segundo número serão os fatores da operação matemática que você deve fazer. Quando você clicar no segundo número o cronometro começará a contar e opções aparecerão abaixo, uma delas sempre será correta, e é nela que você dele clicar para continuar o jogo. Se clicar na opção incorreta você vai perder!</p>
+        </div>
+    </section>
+
+    <script src="javascript/script.js"></script>
+</body>
+</html>
