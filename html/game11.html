@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="../css/game.css">
 </head>
 <body>
+    <div id="gameOver"><img src="../image/backgroundGameOver.png"><h1>GAME OVER<br><p>Você durou: </p></h1></div>
+
     <header id="cabecalhoBackground"></header>
     <header id="cabecalho">
         <div id="niveis" class="cabecalhoButtons" onclick="menu()">|||</div>
@@ -31,13 +33,13 @@
     <section id="corpo">
         <h1 id="corpoTitulo">Jogar</h1>
         <div id="conteudo">
-            <div id="botaoIniciar" onclick="iniciarGame()"></div>
-            <div class="linhaVertical">|</div>
-            <div id="segundoNumero" onclick="ativarCronometro()"></div><br>
+            <div id="botaoIniciar" onclick="iniciarGame()"></div><br>
+            <div id="segundoNumero" onclick="comecar()"></div><br>
         </div>
     </section>
 
     <script src="../javascript/script.js"></script>
     <script src="../javascript/game.js"></script>
+    <script src="../javascript/game11.js"></script>
 </body>
 </html>
