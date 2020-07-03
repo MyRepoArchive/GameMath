@@ -15,7 +15,6 @@
         <div id="niveis" class="cabecalhoButtons" onclick="menu()">|||</div>
         <div id="tipoCalculo" class="cabecalhoButtons">+</div>
         <h1 id="nomeSite"><a href="../index.html"><span>M</span>ath<span>G</span>ame</a></h1>
-        <div id="cronometroLine"></div>
     </header>
 
     <aside id="menu">
@@ -33,8 +32,9 @@
     <section id="corpo">
         <h1 id="corpoTitulo">Jogar</h1>
         <div id="conteudo">
-            <div id="botaoIniciar" onclick="iniciarGame()"></div><br>
-            <div id="segundoNumero" onclick="comecar()"></div><br>
+            <div id="cronometro"></div>
+            <div id="botaoIniciar" onclick="iniciarGame()">Preparar, apontar...</div><br>
+            <div id="0" onclick="comecar()" style="display: none">Fogo</div><br>
         </div>
     </section>
 

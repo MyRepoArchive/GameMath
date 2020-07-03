@@ -21,7 +21,7 @@ div#gameOver h1{
     font-family: 'Black Ops One', cursive;
 }
 div#gameOver h1 p {
-    font-size: 5vw;
+    font-size: 3vw;
 }
 nav#navbar {
     margin-left: -8px;
@@ -29,10 +29,6 @@ nav#navbar {
     width: max-content;
     padding: 20px 120px 20px 20px;
     background: repeating-linear-gradient(135deg, white, white 69%, rgba(0,0,0,0) 1px, rgba(0,0,0,0) 100%);
-}
-div#cronometroLine {
-    height: 3px;
-    background: orangered;
 }
 div#tipoCalculo {
     position: fixed;
@@ -80,7 +76,7 @@ div#conteudo {
 }
 div#botaoIniciar {
     padding: 15px;
-    background: rgb(0, 202, 0);
+    background: green;
     border-radius: 5px;
     display: inline-block;
     box-shadow: 0px 0px 10px green;
@@ -90,14 +86,7 @@ div#botaoIniciar:active {
     box-shadow: 0px 0px 15px green;
     transition: 150ms;
 }
-div#segundoNumero {
-    padding: 15px;
-    background: green;
-    border-radius: 5px;
-    display: none;
-    margin: 5px;
-    font-family: Arial, Helvetica, sans-serif;
-}
+
 div.alternativa {
     padding: 10px;
     background: grey;
