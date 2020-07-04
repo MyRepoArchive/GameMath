@@ -11,11 +11,11 @@ var minRandom = penultimoNum + ultimoNum - Math.random() * 15
 var counterIdDivCerto = 1
 var counterIdDivErrado = -1
 var respostaRandom = parseInt(Math.random() * (maxRandom - minRandom) + minRandom)
-if(respostaRandom == penultimoNum + ultimoNum) {
+while(respostaRandom == penultimoNum + ultimoNum) {
     respostaRandom = parseInt(Math.random() * (maxRandom - minRandom) + minRandom)
 }
 var respostaRandom1 = parseInt(Math.random() * (maxRandom - minRandom) + minRandom)
-if(respostaRandom1 == penultimoNum + ultimoNum || respostaRandom1 == respostaRandom) {
+while(respostaRandom1 == penultimoNum + ultimoNum || respostaRandom1 == respostaRandom) {
     respostaRandom1 = parseInt(Math.random() * (maxRandom - minRandom) + minRandom)
 }
 var alturaPag = window.innerHeight
@@ -59,11 +59,11 @@ function mudarValores() {
     maxRandom = penultimoNum + ultimoNum + Math.random() * 15
     minRandom = penultimoNum + ultimoNum - Math.random() * 15
     respostaRandom = parseInt(Math.random() * (maxRandom - minRandom) + minRandom)
-    if(respostaRandom == penultimoNum + ultimoNum) {
+    while(respostaRandom == penultimoNum + ultimoNum) {
         respostaRandom = parseInt(Math.random() * (maxRandom - minRandom) + minRandom)
     }
     respostaRandom1 = parseInt(Math.random() * (maxRandom - minRandom) + minRandom)
-    if(respostaRandom1 == penultimoNum + ultimoNum || respostaRandom1 == respostaRandom) {
+    while(respostaRandom1 == penultimoNum + ultimoNum || respostaRandom1 == respostaRandom) {
         respostaRandom1 = parseInt(Math.random() * (maxRandom - minRandom) + minRandom)
     }
 }
@@ -86,6 +86,13 @@ function criarDiv(arg) {
         document.getElementById(`${counterIdDivCerto-1}`).removeEventListener("click", criarDivCertoErrado)
         document.getElementById(`${counterIdDivCerto-1}`).removeEventListener("click", mudarValores)
         document.getElementById(`${counterIdDivCerto-1}`).style.background = 'green'
+        if(counterIdDivCerto > 1) {
+            document.getElementById(`${counterIdDivCerto-2}`).style.background = 'rgb(0, 81, 255)'
+            document.getElementById(`${counterIdDivCerto-1}`).style.background = 'rgb(0, 81, 255)'
+        }
+        if(counterIdDivCerto > 2) {
+            document.getElementById(`${counterIdDivCerto-3}`).style.background = 'green'
+        }
         counterIdDivCerto++
         
     } else if(arg == 'errado'){
@@ -121,7 +128,7 @@ function iniciarGame() {
     document.getElementById('0').style.display = 'inline-block'
     document.getElementById('0').style.padding = '15px'
     document.getElementById('0').style.background = 'green'
-    document.getElementById('0').style.boxShadow = '0px 0px 10px green'
+    document.getElementById('0').style.boxShadow = '0px 0px 10px black'
     document.getElementById('0').style.borderRadius = '5px'
     document.getElementById('0').style.margin = '5px'
     document.getElementById('0').style.fontFamily = 'Arial, Helvetica, sans-serif'
