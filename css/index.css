@@ -8,9 +8,9 @@ nav#navbar {
 div.selectDificuldade {
     color: white;
     text-shadow: 0px 0px 5px black;
-    height: 120px;
+    height: 80px;
     width: 180px;
-    padding: 30px;
+    padding: 20px;
     background: grey;
     border-radius: 5px;
     margin-left: 5%;
@@ -22,15 +22,18 @@ div.selectDificuldade {
 div.selectDificuldade:hover {
     color: rgba(0, 0, 0, 0.5);
 }
+div.selectDificuldade h1{
+    margin: 0;
+}
 div#selDifFacil {background: rgb(0, 187, 0);}
 div#selDifMedio {background: rgb(255, 217, 0);}
 div#selDifDificil {background: red;}
 div.selectCalculo {
     color: white;
     text-shadow: 0px 0px 5px black;
-    height: 120px;
+    height: 90px;
     width: 140px;
-    padding: 30px;
+    padding: 20px;
     background: grey;
     border-radius: 5px;
     margin-left: 3%;
@@ -44,6 +47,9 @@ div.selectCalculo:hover {
 }
 div.selectCalculo h1 {
     font-size: 3em;
+    margin: 0;
+}
+div.selectCalculo p {
     margin: 0;
 }
 a#linkButtonIr {

@@ -14,6 +14,18 @@ var respostaRandom = parseInt(Math.random() * (maxRandom - minRandom) + minRando
 if(respostaRandom == penultimoNum + ultimoNum) {
     respostaRandom = parseInt(Math.random() * (maxRandom - minRandom) + minRandom)
 }
+var respostaRandom1 = parseInt(Math.random() * (maxRandom - minRandom) + minRandom)
+if(respostaRandom1 == penultimoNum + ultimoNum || respostaRandom1 == respostaRandom) {
+    respostaRandom1 = parseInt(Math.random() * (maxRandom - minRandom) + minRandom)
+}
+var respostaRandom2 = parseInt(Math.random() * (maxRandom - minRandom) + minRandom)
+if(respostaRandom2 == penultimoNum + ultimoNum || respostaRandom2 == respostaRandom || respostaRandom2 == respostaRandom1) {
+    respostaRandom2 = parseInt(Math.random() * (maxRandom - minRandom) + minRandom)
+}
+var respostaRandom3 = parseInt(Math.random() * (maxRandom - minRandom) + minRandom)
+if(respostaRandom3 == penultimoNum + ultimoNum || respostaRandom3 == respostaRandom || respostaRandom3 == respostaRandom1 || respostaRandom3 == respostaRandom2) {
+    respostaRandom3 = parseInt(Math.random() * (maxRandom - minRandom) + minRandom)
+}
 var alturaPag = window.innerHeight
 var crono = false
 var sec = 0
@@ -31,11 +43,35 @@ function comecar() {
     document.getElementById('0').onclick = ''
 }
 function criarDivCertoErrado() {
-    if(posicaoRandom < 5) {
+    if(posicaoRandom < 2) {
         criarDiv('certo')
         criarDiv('errado')
+        criarDiv('errado1')
+        criarDiv('errado2')
+        criarDiv('errado3')
+    } else if(posicaoRandom < 4) {
+        criarDiv('errado')
+        criarDiv('certo')
+        criarDiv('errado1')
+        criarDiv('errado2')
+        criarDiv('errado3')
+    } else if(posicaoRandom < 6) {
+        criarDiv('errado')
+        criarDiv('errado1')
+        criarDiv('certo')
+        criarDiv('errado2')
+        criarDiv('errado3')
+    } else if(posicaoRandom < 8) {
+        criarDiv('errado')
+        criarDiv('errado1')
+        criarDiv('errado2')
+        criarDiv('certo')
+        criarDiv('errado3')
     } else {
         criarDiv('errado')
+        criarDiv('errado1')
+        criarDiv('errado2')
+        criarDiv('errado3')
         criarDiv('certo')
     }
     mudarValores()
@@ -52,6 +88,18 @@ function mudarValores() {
     if(respostaRandom == penultimoNum + ultimoNum) {
         respostaRandom = parseInt(Math.random() * (maxRandom - minRandom) + minRandom)
     }
+    respostaRandom1 = parseInt(Math.random() * (maxRandom - minRandom) + minRandom)
+    if(respostaRandom1 == penultimoNum + ultimoNum || respostaRandom1 == respostaRandom) {
+        respostaRandom1 = parseInt(Math.random() * (maxRandom - minRandom) + minRandom)
+    }
+    respostaRandom2 = parseInt(Math.random() * (maxRandom - minRandom) + minRandom)
+    if(respostaRandom2 == penultimoNum + ultimoNum || respostaRandom2 == respostaRandom || respostaRandom2 == respostaRandom1) {
+        respostaRandom2 = parseInt(Math.random() * (maxRandom - minRandom) + minRandom)
+    }
+    respostaRandom3 = parseInt(Math.random() * (maxRandom - minRandom) + minRandom)
+    if(respostaRandom3 == penultimoNum + ultimoNum || respostaRandom3 == respostaRandom || respostaRandom3 == respostaRandom1 || respostaRandom3 == respostaRandom2) {
+        respostaRandom3 = parseInt(Math.random() * (maxRandom - minRandom) + minRandom)
+    }
 }
 function criarDiv(arg) {
     if(arg == 'certo') {
@@ -61,7 +109,7 @@ function criarDiv(arg) {
         createDiv.addEventListener("click", criarDivCertoErrado)
         createDiv.addEventListener("click", mudarValores)
         document.querySelector('#conteudo').appendChild(createDiv)
-        if(posicaoRandom > 5) {
+        if(posicaoRandom > 8) {
             document.querySelector('#conteudo').appendChild(document.createElement('br'))
         }
         penultimoNumR = Number(document.getElementById(`${counterIdDivCerto-1}`).innerHTML)
@@ -74,16 +122,40 @@ function criarDiv(arg) {
         document.getElementById(`${counterIdDivCerto-1}`).style.background = 'green'
         counterIdDivCerto++
         
-    } else {
+    } else if(arg == 'errado'){
         var createDiv = document.createElement('div')
         createDiv.id = counterIdDivErrado
         createDiv.className = 'alternativa'
         createDiv.addEventListener("mousedown", pararJogo)
         document.querySelector('#conteudo').appendChild(createDiv)
-        if(posicaoRandom < 5) {
+        document.getElementById(`${counterIdDivErrado}`).innerHTML = respostaRandom
+        counterIdDivErrado--
+    } else if(arg == 'errado1'){
+        var createDiv = document.createElement('div')
+        createDiv.id = counterIdDivErrado-0.3
+        createDiv.className = 'alternativa'
+        createDiv.addEventListener("mousedown", pararJogo)
+        document.querySelector('#conteudo').appendChild(createDiv)
+        document.getElementById(`${counterIdDivErrado-0.3}`).innerHTML = respostaRandom1
+        counterIdDivErrado--
+    } else if(arg == 'errado2'){
+        var createDiv = document.createElement('div')
+        createDiv.id = counterIdDivErrado-0.6
+        createDiv.className = 'alternativa'
+        createDiv.addEventListener("mousedown", pararJogo)
+        document.querySelector('#conteudo').appendChild(createDiv)
+        document.getElementById(`${counterIdDivErrado-0.6}`).innerHTML = respostaRandom2
+        counterIdDivErrado--
+    } else {
+        var createDiv = document.createElement('div')
+        createDiv.id = counterIdDivErrado-0.9
+        createDiv.className = 'alternativa'
+        createDiv.addEventListener("mousedown", pararJogo)
+        document.querySelector('#conteudo').appendChild(createDiv)
+        if(posicaoRandom < 8) {
             document.querySelector('#conteudo').appendChild(document.createElement('br'))
         }
-        document.getElementById(`${counterIdDivErrado}`).innerHTML = respostaRandom
+        document.getElementById(`${counterIdDivErrado-0.9}`).innerHTML = respostaRandom3
         counterIdDivErrado--
     }
 }
@@ -115,4 +187,4 @@ function pararJogo() {
     document.querySelector('#gameOver p').innerHTML += `Sua taxa de pontos por minuto foi: ${(counterIdDivCerto / ((fimGame - inicioGame)/60000)).toFixed(2)}<sup>p</sup>/<sub>m</sub>`
     
 }
-document.querySelector('#corpo').style.borderColor = 'rgb(0, 187, 0)'
+document.querySelector('#corpo').style.borderColor = 'red'

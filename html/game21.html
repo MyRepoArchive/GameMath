@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MathGame - Jogar</title>
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" href="../css/game.css">
+</head>
+<body>
+    <div id="gameOver"><img src="../image/backgroundGameOver.png"><h1>GAME OVER<br><p>Você durou: </p></h1></div>
+
+    <header id="cabecalhoBackground"></header>
+    <header id="cabecalho">
+        <div id="niveis" class="cabecalhoButtons" onclick="menu()">|||</div>
+        <div id="cronometro"></div>
+        <a href=""><div id="restart" class="cabecalhoButtons">&#8635;</div></a>
+        <div id="tipoCalculo" class="cabecalhoButtons" onclick="tipoCalcMenu()">+</div>
+        <h1 id="nomeSite"><a href="../index.html"><span>M</span>ath<span>G</span>ame</a></h1>
+    </header>
+
+    <aside id="menu">
+        <div id="dificuldadeMenu" class="menuItem" onclick="dificuldadeMenu()"><h3>Dificuldade<div id="seta">&#62;</div></h3></div>
+        <a href="../regras.html"><div class="menuItem" id="regrasMenu"><h3>Regras</h3></div></a>
+        <div id="escolhaDificuldadeMenu">
+            <a href="game11.html" id="linkEscDifMenuFacil" class="linkEscDifMenu"><div class="escolhaDificuldadeMenu" id="escDifMenuFacil"><h4>Fácil</h4></div></a>
+            <a href="game21.html" id="linkEscDifMenuMedio" class="linkEscDifMenu"><div class="escolhaDificuldadeMenu" id="escDifMenuMedio"><h4>Medio</h4></div></a>
+            <a href="game31.html" id="linkEscDifMenuDificil" class="linkEscDifMenu"><div class="escolhaDificuldadeMenu" id="escDifMenuDificil"><h4>Dificil</h4></div></a>
+        </div>
+    </aside>
+
+    <aside id="tipoCalcMenu" >
+        <a href="game21.html" id="linkTipoCalcAdicao" class="linkTipoCalc"><div class="tipoCalc" id="tipoCalcAdicao"><h1>+</h1></div></a>
+        <a href="game22.html" id="linkTipoCalcSubtracao" class="linkTipoCalc"><div class="tipoCalc" id="tipoCalcSubtracao"><h1>-</h1></div></a>
+        <a href="game23.html" id="linkTipoCalcMultiplicacao" class="linkTipoCalc"><div class="tipoCalc" id="tipoCalcMultiplcacao"><h1>&times;</h1></div></a>
+        <a href="game24.html" id="linkTipoCalcDivisao" class="linkTipoCalc"><div class="tipoCalc" id="tipoCalcDivisao"><h1>&divide;</h1></div></a>
+    </aside>
+
+    <nav id="navbar">Home - Jogar</nav>
+
+    <section id="corpo">
+        <h1 id="corpoTitulo">Jogar</h1>
+        <div id="conteudo">
+            <div id="cronometro"></div>
+            <div id="botaoIniciar" onclick="iniciarGame()">Preparar, apontar...</div><br>
+            <div id="0" onclick="comecar()" style="display: none">Fogo</div><br>
+        </div>
+    </section>
+
+    <script src="../javascript/script.js"></script>
+    <script src="../javascript/game.js"></script>
+    <script src="../javascript/game21.js"></script>
+</body>
+</html>
