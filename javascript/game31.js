@@ -9,6 +9,9 @@ var maxRandom = penultimoNum + ultimoNum + Math.random() * 15
 var minRandom = penultimoNum + ultimoNum - Math.random() * 15
 var counterIdDivCerto = 1
 var counterIdDivErrado = -1
+var counterIdDivErrado1 = -100
+var counterIdDivErrado2 = -200
+var counterIdDivErrado3 = -300
 var respostaRandom = parseInt(Math.random() * (maxRandom - minRandom) + minRandom)
 while(respostaRandom == penultimoNum + ultimoNum) {
     respostaRandom = parseInt(Math.random() * (maxRandom - minRandom) + minRandom)
@@ -98,6 +101,9 @@ function criarDivCertoErrado() {
         minRandom = penultimoNum + ultimoNum - Math.random() * 15
         counterIdDivCerto = 1
         counterIdDivErrado = -1
+        counterIdDivErrado1 = -100
+        counterIdDivErrado2 = -200
+        counterIdDivErrado3 = -300
         respostaRandom = parseInt(Math.random() * (maxRandom - minRandom) + minRandom)
         while(respostaRandom == penultimoNum + ultimoNum) {
             respostaRandom = parseInt(Math.random() * (maxRandom - minRandom) + minRandom)
@@ -175,26 +181,35 @@ function criarDiv(arg) {
         createDiv.addEventListener("mousedown", pararJogo)
         document.querySelector('#conteudo').appendChild(createDiv)
         document.getElementById(`${counterIdDivErrado}`).innerHTML = respostaRandom
+        if(counterIdDivErrado < -1) {
+            document.getElementById(`${counterIdDivErrado+1}`).removeEventListener("mousedown", pararJogo)
+        }
         counterIdDivErrado--
     } else if(arg == 'errado1'){
         var createDiv = document.createElement('div')
-        createDiv.id = counterIdDivErrado-0.3
+        createDiv.id = counterIdDivErrado1
         createDiv.className = 'alternativa'
         createDiv.addEventListener("mousedown", pararJogo)
         document.querySelector('#conteudo').appendChild(createDiv)
-        document.getElementById(`${counterIdDivErrado-0.3}`).innerHTML = respostaRandom1
-        counterIdDivErrado--
+        document.getElementById(`${counterIdDivErrado1}`).innerHTML = respostaRandom1
+        if(counterIdDivErrado1 < -100) {
+            document.getElementById(`${counterIdDivErrado1+1}`).removeEventListener("mousedown", pararJogo)
+        }
+        counterIdDivErrado1--
     } else if(arg == 'errado2'){
         var createDiv = document.createElement('div')
-        createDiv.id = counterIdDivErrado-0.6
+        createDiv.id = counterIdDivErrado2
         createDiv.className = 'alternativa'
         createDiv.addEventListener("mousedown", pararJogo)
         document.querySelector('#conteudo').appendChild(createDiv)
-        document.getElementById(`${counterIdDivErrado-0.6}`).innerHTML = respostaRandom2
-        counterIdDivErrado--
+        document.getElementById(`${counterIdDivErrado2}`).innerHTML = respostaRandom2
+        if(counterIdDivErrado2 < -200) {
+            document.getElementById(`${counterIdDivErrado2+1}`).removeEventListener("mousedown", pararJogo)
+        }
+        counterIdDivErrado2--
     } else {
         var createDiv = document.createElement('div')
-        createDiv.id = counterIdDivErrado-0.9
+        createDiv.id = counterIdDivErrado3
         createDiv.className = 'alternativa'
         createDiv.addEventListener("mousedown", pararJogo)
         document.querySelector('#conteudo').appendChild(createDiv)
@@ -202,8 +217,11 @@ function criarDiv(arg) {
             document.querySelector('#conteudo').appendChild(document.createElement('br'))
             document.querySelector('#conteudo').appendChild(document.createElement('hr'))
         }
-        document.getElementById(`${counterIdDivErrado-0.9}`).innerHTML = respostaRandom3
-        counterIdDivErrado--
+        document.getElementById(`${counterIdDivErrado3}`).innerHTML = respostaRandom3
+        if(counterIdDivErrado3 < -300) {
+            document.getElementById(`${counterIdDivErrado3+1}`).removeEventListener("mousedown", pararJogo)
+        }
+        counterIdDivErrado3--
     }
 }
 function iniciarCronometro() {
@@ -244,6 +262,8 @@ function gerarRandom() {
     return Math.random() * 10 * (Math.random() * 10)
 }
 function pararJogo() {
+    clearInterval(timeout)
+    cincos = false
     fimGame = Date.now()
     crono = true
     document.querySelector('#cronometro').innerHTML = '0'+parseInt((fimGame - inicioGame)/1000)
