@@ -1,12 +1,16 @@
 var inicioGame = false
 var fimGame = false
 var penultimoNum = parseInt(gerarRandom())
-var penultimoNumR = penultimoNum
 var ultimoNum = parseInt(gerarRandom())
+while(penultimoNum + ultimoNum == 0) {
+    penultimoNum = parseInt(gerarRandom())
+    ultimoNum = parseInt(gerarRandom())
+}
+var penultimoNumR = penultimoNum
 var ultimoNumR = ultimoNum
 var posicaoRandom = Math.random() * 10
-var maxRandom = penultimoNum + ultimoNum + Math.random() * 15
-var minRandom = penultimoNum + ultimoNum - Math.random() * 15
+var maxRandom = penultimoNum + ultimoNum + 15
+var minRandom = penultimoNum + ultimoNum - 15
 var counterIdDivCerto = 1
 var counterIdDivErrado = -1
 var counterIdDivErrado1 = -100
@@ -93,12 +97,16 @@ function criarDivCertoErrado() {
         document.querySelector('#conteudo').innerHTML = `Parabéns, você chegou à 70 pontos, você recebeu mais 70 pontos!<br><div id="botaoIniciar" onclick="iniciarGame()">Preparar, apontar...</div><br>
         <div id="0" onclick="comecarNovamente()" style="display: none">Fogo</div><br>`
         penultimoNum = parseInt(gerarRandom())
-        penultimoNumR = penultimoNum
         ultimoNum = parseInt(gerarRandom())
+        while(penultimoNum + ultimoNum == 0) {
+            penultimoNum = parseInt(gerarRandom())
+            ultimoNum = parseInt(gerarRandom())
+        }
+        penultimoNumR = penultimoNum
         ultimoNumR = ultimoNum
         posicaoRandom = Math.random() * 10
-        maxRandom = penultimoNum + ultimoNum + Math.random() * 15
-        minRandom = penultimoNum + ultimoNum - Math.random() * 15
+        maxRandom = penultimoNum + ultimoNum + 15
+        minRandom = penultimoNum + ultimoNum - 15
         counterIdDivCerto = 1
         counterIdDivErrado = -1
         counterIdDivErrado1 = -100
@@ -234,7 +242,6 @@ function cincoS() {
         timeout = setInterval(() => {
             if(cincos <= 10) {
                 document.querySelector('#cincos').style.background = `repeating-linear-gradient(to left, rgba(0,0,0,0), rgba(0,0,0,0) ${cincos*10}%, orangered 1px, orangered 100%)`
-                console.log(cincos)
                 cincos++
             } else {
                 pararJogo()
@@ -270,7 +277,7 @@ function pararJogo() {
     document.querySelector('#gameOver').style.display = 'block'
     document.querySelector('#gameOver p').innerHTML += ((fimGame - inicioGame)/1000).toFixed(1) +'s<br>'
     document.querySelector('#gameOver p').innerHTML += `Fez ${counterIdDivCerto+140*multiPoints} pontos<br>`
-    document.querySelector('#gameOver p').innerHTML += `Sua taxa de pontos por minuto foi: ${((counterIdDivCerto+multiPoints) / ((fimGame - inicioGame)/60000)).toFixed(2)}<sup>p</sup>/<sub>m</sub>`
+    document.querySelector('#gameOver p').innerHTML += `Sua taxa de pontos por minuto foi: ${((counterIdDivCerto+140*multiPoints) / ((fimGame - inicioGame)/60000)).toFixed(2)}<sup>p</sup>/<sub>m</sub>`
     
 }
 document.querySelector('#corpo').style.borderColor = 'red'

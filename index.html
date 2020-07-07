@@ -4,25 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MathGame</title>
-    <link rel="stylesheet" href="css/estilo.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/estilo.css" id="estilo">
+    <link rel="stylesheet" href="css/index.css" id="estiloIndex">
 </head>
 <body>
     <header id="cabecalhoBackground"></header>
     <header id="cabecalho">
         <div id="niveis" class="cabecalhoButtons" onclick="menu()"><div>|||</div></div>
-        <!--<div id="tipoCalculo" class="cabecalhoButtons">+</div>-->
         <h1 id="nomeSite"><a href="index.html"><span>M</span>ath<span>G</span>ame</a></h1>
     </header>
 
     <aside id="menu">
-        <!--<div id="dificuldadeMenu" class="menuItem" onclick="dificuldadeMenu()"><h3>Dificuldade<div id="seta">&#62;</div></h3></div>-->
+        <div class="menuItem" id="mudarTema"><div id="temaWhite" class="tema" onclick="mudarTema('white')">White</div><div id="temaDark" class="tema" onclick="mudarTema('dark')">Dark</div></div>
         <a href="regras.html"><div class="menuItem" id="regrasMenu"><h3>Regras</h3></div></a>
-        <!--<div id="escolhaDificuldadeMenu">
-            <a href="" id="linkEscDifMenuFacil" class="linkEscDifMenu"><div class="escolhaDificuldadeMenu" id="escDifMenuFacil"><h4>Fácil</h4></div></a>
-            <a href="" id="linkEscDifMenuMedio" class="linkEscDifMenu"><div class="escolhaDificuldadeMenu" id="escDifMenuMedio"><h4>Medio</h4></div></a>
-            <a href="" id="linkEscDifMenuDificil" class="linkEscDifMenu"><div class="escolhaDificuldadeMenu" id="escDifMenuDificil"><h4>Dificil</h4></div></a>
-        </div>-->
     </aside>
 
     <nav id="navbar">Home</nav>
@@ -32,32 +26,24 @@
         <div id="conteudo">
             <div class="selectDificuldade" id="selDifFacil" onclick="select('facil')">
                 <h1>Fácil</h1>
-                <p>Se você é iniciante ou se não se dá muito bem com calculos</p>
             </div>
             <div class="selectDificuldade" id="selDifMedio" onclick="select('medio')">
                 <h1>Médio</h1>
-                <p>Se você já manja do jogo e se vira com matematica</p>
             </div>
             <div class="selectDificuldade" id="selDifDificil" onclick="select('dificil')">
                 <h1>Difícil</h1>
-                <p>Se você é expert no game e é puramente de exatas</p>
             </div><br>
-
             <div class="selectCalculo" id="selCalcAdicao" onclick="select('adicao')">
                 <h1>+</h1>
-                <p>Calculos simples de Soma</p>
             </div>
             <div class="selectCalculo" id="selCalcSubtracao" onclick="select('subtracao')">
                 <h1>-</h1>
-                <p>Calculos simples de Subtração</p>
             </div>
             <div class="selectCalculo" id="selCalcMultiplicacao" onclick="select('multiplicacao')">
                 <h1>&times;</h1>
-                <p>Calculos simples de Multiplicação</p>
             </div>
             <div class="selectCalculo" id="selCalcDivisao" onclick="select('divisao')">
                 <h1>&divide;</h1>
-                <p>Calculos simples de Divisão</p>
             </div>
 
             <a href="" id="linkButtonIr"><div id="buttonIr">

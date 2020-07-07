@@ -123,3 +123,12 @@ function select(div) {
         }
     }
 }    
+function mudarTema(tema) {
+    if(tema == 'white') {
+        document.querySelector('#estilo').href = 'css/estilo.css'
+        document.querySelector('#estiloIndex').href = 'css/index.css'
+    } else {
+        document.querySelector('#estiloIndex').href = 'css/indexDark.css'
+        document.querySelector('#estilo').href = 'css/estiloDark.css'
+    }
+}

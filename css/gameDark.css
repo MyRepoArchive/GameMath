@@ -1,7 +1,6 @@
 div#gameOver {
     display: none;
 }
-
 div#gameOver img {
     width: 1500vmax;
     position: fixed;
@@ -35,7 +34,7 @@ nav#navbar {
     font-size: 1.2em;
     width: max-content;
     padding: 20px 120px 20px 20px;
-    background: repeating-linear-gradient(135deg, white, white 69%, rgba(0,0,0,0) 1px, rgba(0,0,0,0) 100%);
+    background: repeating-linear-gradient(135deg, rgb(36, 39, 48), rgb(36, 39, 48) 69%, rgba(0,0,0,0) 1px, rgba(0,0,0,0) 100%);
 }
 div#cronometro {
     position: fixed;
@@ -62,7 +61,7 @@ div.menuItem div#seta, div.menuItem div#seta2 {
 }
 div#escolhaDificuldadeMenu {
     position: fixed;
-    background: repeating-linear-gradient(135deg, white, white 90%, rgba(0,0,0,0) 1px, rgba(0,0,0,0) 100%);
+    background: repeating-linear-gradient(135deg, rgb(36, 39, 48), rgb(36, 39, 48) 90%, rgba(0,0,0,0) 1px, rgba(0,0,0,0) 100%);
     top: 50px;
     left: 156px;
     display: none;
@@ -75,7 +74,7 @@ div.escolhaDificuldadeMenu {
     border-left: 1px solid black;
     border-top: 1px solid black;
     display: inline-block;
-    color: black;
+    color: white;
 }
 div.escolhaDificuldadeMenu:hover {
     background: rgba(0, 0, 0, 0.1);
@@ -88,19 +87,19 @@ div.escolhaDificuldadeMenu h4 {
 }
 div#tipoCalcMenu {
     position: fixed;
-    background: repeating-linear-gradient(135deg, white, white 90%, rgba(0,0,0,0) 1px, rgba(0,0,0,0) 100%);
+    background: repeating-linear-gradient(135deg, rgb(36, 39, 48), rgb(36, 39, 48) 90%, rgba(0,0,0,0) 1px, rgba(0,0,0,0) 100%);
     top: 103px;
     left: 156px;
     display: none;
 }
 a.linkTipoCalc {
-    color: black;
+    color: white;
     text-decoration: none;
 }
 div.tipoCalc {
     display: inline-block;
-    border-left: 1px solid black;
-    border-top: 1px solid black;
+    border-left: 1px solid white;
+    border-top: 1px solid white;
 }
 div.tipoCalc:hover {
     background: rgba(0, 0, 0, 0.1);

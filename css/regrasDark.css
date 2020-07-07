@@ -3,7 +3,7 @@ nav#navbar {
     font-size: 1.2em;
     width: max-content;
     padding: 20px 120px 20px 20px;
-    background: repeating-linear-gradient(135deg, white, white 69%, rgba(0,0,0,0) 1px, rgba(0,0,0,0) 100%);
+    background: repeating-linear-gradient(135deg, rgb(36, 39, 48), rgb(36, 39, 48) 69%, rgba(0,0,0,0) 1px, rgba(0,0,0,0) 100%);
 }
 h1#corpoTitulo {
     padding-right: 80px;
