@@ -98,8 +98,8 @@ a.linkTipoCalc {
 }
 div.tipoCalc {
     display: inline-block;
-    border-left: 1px solid white;
-    border-top: 1px solid white;
+    border-left: 1px solid black;
+    border-top: 1px solid black;
 }
 div.tipoCalc:hover {
     background: rgba(0, 0, 0, 0.1);
@@ -111,6 +111,10 @@ div.tipoCalc h1 {
     margin: 0;
     font-size: 2em;
     padding: 8px 10px 8px 10px;
+}
+div.tipoCalc h3 {
+    margin: 0;
+    padding: 12px 10px 12px 10px;
 }
 h1#corpoTitulo {
     padding-right: 80px;

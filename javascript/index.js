@@ -12,8 +12,8 @@ function select(div) {
             document.querySelector('#linkButtonIr').href = ' '
             document.querySelector('#selCalcAdicao').style.background = 'grey'
             document.querySelector('#selCalcAdicao').style.borderColor = 'rgba(0,0,0,0)'
-            document.querySelector('#selCalcSubtracao').style.background = 'grey'
-            document.querySelector('#selCalcSubtracao').style.borderColor = 'rgba(0,0,0,0)'
+            document.querySelector('#selCalcPotencia').style.background = 'grey'
+            document.querySelector('#selCalcPotencia').style.borderColor = 'rgba(0,0,0,0)'
             document.querySelector('#selCalcMultiplicacao').style.background = 'grey'
             document.querySelector('#selCalcMultiplicacao').style.borderColor = 'rgba(0,0,0,0)'
             document.querySelector('#selCalcDivisao').style.background = 'grey'
@@ -33,8 +33,8 @@ function select(div) {
             document.querySelector('#linkButtonIr').href = ' '
             document.querySelector('#selCalcAdicao').style.background = 'grey'
             document.querySelector('#selCalcAdicao').style.borderColor = 'rgba(0,0,0,0)'
-            document.querySelector('#selCalcSubtracao').style.background = 'grey'
-            document.querySelector('#selCalcSubtracao').style.borderColor = 'rgba(0,0,0,0)'
+            document.querySelector('#selCalcPotencia').style.background = 'grey'
+            document.querySelector('#selCalcPotencia').style.borderColor = 'rgba(0,0,0,0)'
             document.querySelector('#selCalcMultiplicacao').style.background = 'grey'
             document.querySelector('#selCalcMultiplicacao').style.borderColor = 'rgba(0,0,0,0)'
             document.querySelector('#selCalcDivisao').style.background = 'grey'
@@ -54,8 +54,8 @@ function select(div) {
             document.querySelector('#linkButtonIr').href = ' '
             document.querySelector('#selCalcAdicao').style.background = 'grey'
             document.querySelector('#selCalcAdicao').style.borderColor = 'rgba(0,0,0,0)'
-            document.querySelector('#selCalcSubtracao').style.background = 'grey'
-            document.querySelector('#selCalcSubtracao').style.borderColor = 'rgba(0,0,0,0)'
+            document.querySelector('#selCalcPotencia').style.background = 'grey'
+            document.querySelector('#selCalcPotencia').style.borderColor = 'rgba(0,0,0,0)'
             document.querySelector('#selCalcMultiplicacao').style.background = 'grey'
             document.querySelector('#selCalcMultiplicacao').style.borderColor = 'rgba(0,0,0,0)'
             document.querySelector('#selCalcDivisao').style.background = 'grey'
@@ -82,15 +82,15 @@ function select(div) {
                 sttCalc = false
             }
         }
-        if(div == 'subtracao') {
+        if(div == 'potencia') {
             if(sttCalc == false) {
-                document.querySelector('#selCalcSubtracao').style.background = 'rgb(36, 39, 48)'
-                document.querySelector('#selCalcSubtracao').style.borderColor = 'black'
+                document.querySelector('#selCalcPotencia').style.background = 'rgb(36, 39, 48)'
+                document.querySelector('#selCalcPotencia').style.borderColor = 'black'
                 sttCalc = 2
                 document.querySelector('#linkButtonIr').href = 'html/game' + `${sttDif}` + sttCalc + '.html'
             } else if(sttCalc == 2) {
-                document.querySelector('#selCalcSubtracao').style.background = 'grey'
-                document.querySelector('#selCalcSubtracao').style.borderColor = 'rgba(0,0,0,0)'
+                document.querySelector('#selCalcPotencia').style.background = 'grey'
+                document.querySelector('#selCalcPotencia').style.borderColor = 'rgba(0,0,0,0)'
                 document.querySelector('#linkButtonIr').href = ' '
                 sttCalc = false
             }

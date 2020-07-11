@@ -45,6 +45,10 @@ div.selectCalculo h1 {
     font-size: 3em;
     margin: 0;
 }
+div#selCalcPotencia h1{
+    font-size: 1.7em;
+    padding: 5px 0.5px 7px 0.5px;
+}
 a#linkButtonIr {
     text-decoration: none;
 }

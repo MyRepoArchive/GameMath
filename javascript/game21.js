@@ -66,7 +66,7 @@ function criarDivCertoErrado() {
         }
         mudarValores()
     } else {
-        document.querySelector('#conteudo').innerHTML = `Parabéns, você chegou à 70 pontos, você recebeu mais 70 pontos!<br><div id="botaoIniciar" onclick="iniciarGame()">Preparar, apontar...</div><br>
+        document.querySelector('#conteudo').innerHTML = `<h2 id="parabens">Parabéns, você chegou à 70 pontos, você recebeu mais 70 pontos!</h2><br><div id="botaoIniciar" onclick="iniciarGame()">Preparar, apontar...</div><br>
         <div id="0" onclick="comecarNovamente()" style="display: none">Fogo</div><br>`
         penultimoNum = parseInt(gerarRandom())
         ultimoNum = parseInt(gerarRandom())
