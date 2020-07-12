@@ -2,12 +2,12 @@ var sttMenu = false
 function menu() {
     if(sttMenu == false) {
         document.querySelector('aside#menu').style.display = 'block'
-        document.querySelector('#niveis').style.transition = '100ms'
-        document.querySelector('#niveis').style.transform = 'rotate(180deg)'
+        document.querySelector('#niveis div').style.transition = '100ms'
+        document.querySelector('#niveis div').style.transform = 'rotate(90deg)'
         sttMenu = true
     } else {
         document.querySelector('aside#menu').style.display = 'none'
-        document.querySelector('#niveis').style.transform = 'rotate(90deg)'
+        document.querySelector('#niveis div').style.transform = 'rotate(0deg)'
         sttMenu = false
     }
 }

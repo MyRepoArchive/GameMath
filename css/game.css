@@ -26,11 +26,15 @@ div#gameOver h1 p {
     font-family: 'Rationale', sans-serif;
     text-shadow: 5px 5px 10px black;
 }
+div#restart div:active {
+    transform: rotate(90deg);
+    transition: 150ms;
+}
 div#cincos {
     height: 5px;
     background: orangered;
 }
-div#produtoFixo {
+/*div#produtoFixo {
     position: fixed;
     right: 0;
     top: 50px;
@@ -43,7 +47,7 @@ div#produtoFixo {
 }
 div#produtoFixo h2 {
     margin: 0;
-}
+}*/
 nav#navbar {
     margin-left: -8px;
     font-size: 1.2em;
@@ -97,6 +101,9 @@ div.escolhaDificuldadeMenu:hover {
 div.escolhaDificuldadeMenu:active {
     background: rgba(0,0,0,0.2);
 }
+div#escDifMenuDificil:hover {
+    background: repeating-linear-gradient(135deg, rgba(0,0,0,0.1), rgba(0,0,0,0.1) 77%, rgba(0,0,0,0) 1px, rgba(0,0,0,0) 100%);
+}
 div.escolhaDificuldadeMenu h4 {
     margin: 0;
 }
@@ -137,6 +144,7 @@ h1#corpoTitulo {
 div#conteudo {
     padding-bottom: 5%;
     font-weight: bold;
+    user-select: none;
 }
 div#botaoIniciar {
     padding: 15px;
@@ -145,6 +153,7 @@ div#botaoIniciar {
     display: inline-block;
     box-shadow: 0px 0px 10px black;
     font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
 }
 div#botaoIniciar:active {
     box-shadow: 0px 0px 15px green;
@@ -158,4 +167,5 @@ div.alternativa {
     display: inline-block;
     margin: 5px;
     font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
 }
