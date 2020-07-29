@@ -21,6 +21,7 @@ header#cabecalho {
     width: 100%;
     height: 50px;
     user-select: none;
+    z-index: 5;
 }
 div.cabecalhoButtons {
     font-size: 200%;

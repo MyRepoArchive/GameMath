@@ -68,17 +68,84 @@
                     <div class="alternativaEx" id="errada2Ex">25</div><br>
                 </div>
             </div>
-            
             <!--<a href="image/imgExemplo3.png"><img src="image/imgExemplo3.png" class="imgExemplo" id="imgExemplo3"></a>-->
             <p>Se você clicar em alguma das opções incorretas seu jogo vai finalizar, mas para progredir dentro do jogo você deve sempre clicar nas opções corretas, e ao clicar na alternativa certa você vai receber mais um ponto e novas alternativas serão geradas, e novamente apenas uma delas estará correta! Mas dessa vez a alternativa correta vai receber o resultado da soma do ultimo número que você somou com o número da alternativa que você acabou de clicar.</p>
-            <a href="image/imgExemplo4.png"><img src="image/imgExemplo4.png" class="imgExemplo" id="imgExemplo4"></a>
+            <div class="exemplo" id="exemplo4">
+                <div id="container">
+                    <div id="botaoIniciarEx">10</div><br>
+                    <div id="Ex0">5</div><br>
+                    <div class="text" id="somaSinal">+</div>
+                    <div class="alternativaEx" id="errada1Ex">18</div>
+                    <div class="alternativaEx" id="certa1Ex">15</div>
+                    <div class="alternativaEx" id="errada2Ex">25</div><br><hr>
+                    <div class="text" id="textErradas">Errada</div>
+                    <div id="barra0"></div>
+                    <div id="barra1"></div>
+                    <div class="text" id="textCerta">Certa</div>
+                    <div id="barra2"></div>
+                    <div id="barra3"></div>
+                    <div id="containerErradas">
+                        <div class="alternativaEx" id="errada3Ex">26</div>
+                        <div class="alternativaEx" id="errada4Ex">12</div>
+                    </div>
+                    <div id="containerCerta">
+                        <div class="alternativaEx" id="certa2Ex">20</div>
+                    </div><br>
+                </div>
+            </div>
+            
+            <!--<a href="image/imgExemplo4.png"><img src="image/imgExemplo4.png" class="imgExemplo" id="imgExemplo4"></a>-->
             <p>E continuando nessa premissa, seu jogo vai progredindo e você vai recebendo mais pontos.</p>
-            <a href="image/imgExemplo5.png"><img src="image/imgExemplo5.png" class="imgExemplo" id="imgExemplo5"></a>
+            <div class="exemplo" id="exemplo5">
+                <div id="container">
+                    <div id="botaoIniciarEx">10</div><br>
+                    <div id="Ex0">5</div><br>
+                    <div class="alternativaEx" id="errada1Ex">18</div>
+                    <div class="alternativaEx" id="certa1Ex">15</div>
+                    <div class="alternativaEx" id="errada2Ex">25</div><br><hr>
+                    <div class="alternativaEx" id="errada3Ex">26</div>
+                    <div class="alternativaEx" id="errada4Ex">12</div>
+                    <div class="alternativaEx" id="certa2Ex">20</div><br><hr>
+                    <div class="alternativaEx" id="errada5Ex">27</div>
+                    <div class="alternativaEx" id="errada6Ex">22</div>
+                    <div class="alternativaEx" id="certa3Ex">35</div><br><hr>
+                    <div class="alternativaEx" id="certa4Ex">55</div>
+                    <div class="alternativaEx" id="errada7Ex">40</div>
+                    <div class="alternativaEx" id="errada8Ex">56</div><br><hr>
+                    <div class="alternativaEx" id="Errada9Ex">94</div>
+                    <div class="alternativaEx" id="certa5Ex">90</div>
+                    <div class="alternativaEx" id="errada10Ex">112</div><br><hr>
+                </div>
+            </div>
+            
+            <!-- <a href="image/imgExemplo5.png"><img src="image/imgExemplo5.png" class="imgExemplo" id="imgExemplo5"></a> -->
             <p>Mas existe um tempo limite para você fazer seus calculos e chegar a uma alternativa. São 12 segundos disponíveis para cada soma, se esse tempo for excedido você também perderá! Para você ficar atento em quanto tempo lhe resta, há uma barra laranja no topo da página, abaixo do cabeçalho, que conforme o tempo passa ela vai reduzindo seu tamanho, e retorna ao tamanho original quando você clica em alguma alternativa correta.</p>
-            <a href="image/imgExemplo6.png"><img src="image/imgExemplo6.png" class="imgExemplo" id="imgExemplo6"></a>
+            <div class="exemplo" id="exemplo6">
+                <header id="cabecalhoEx">
+                    <div id="niveisEx" class="cabecalhoButtonsEx"><div>|||</div></div>
+                    <div id="cronometroEx">00</div>
+                    <div id="restartEx" class="cabecalhoButtonsEx"><div>&#8635;</div></div>
+                    <h1 id="nomeSiteEx"><span>M</span>ath<span>G</span>ame</h1>
+                    <div id="cincosEx"></div>
+                </header>
+            </div>
+
+            <!-- <a href="image/imgExemplo6.png"><img src="image/imgExemplo6.png" class="imgExemplo" id="imgExemplo6"></a> -->
         </div>
     </section>
 
     <script src="javascript/script.js"></script>
+    <script>
+        var cincosEx = 0
+        setInterval(() => {
+            if(cincosEx <= 10) {
+                document.querySelector('#cincosEx').style.background = `repeating-linear-gradient(to left, rgba(0,0,0,0), rgba(0,0,0,0) ${cincosEx*10}%, orangered 1px, orangered 100%)`
+                cincosEx++ 
+            } else {
+                document.querySelector('#cincosEx').style.background = `repeating-linear-gradient(to left, rgba(0,0,0,0), rgba(0,0,0,0) 0%, orangered 1px, orangered 100%)`
+                cincosEx = 0
+            }
+        }, 1000);
+    </script>
 </body>
 </html>

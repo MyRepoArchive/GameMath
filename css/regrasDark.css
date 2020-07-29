@@ -18,9 +18,15 @@ div#conteudo p {
     text-indent: 50px;
 }
 
-div.exemplo {user-select: none;}
+/*Exemplos em forma de substituição das imagens!*/
 
-div#exemplo1 {text-align: left;}
+
+div.exemplo {user-select: none; text-align: left;}
+
+
+
+/*Exemplo da imagem 1*/
+
 
 div#exemplo1 div.selectDificuldadeEx {
     color: white;
@@ -43,9 +49,612 @@ div#exemplo1 div#selDifFacilEx {background: rgb(0, 187, 0);}
 div#exemplo1 div#selDifMedioEx {background: rgb(255, 217, 0);}
 div#exemplo1 div#selDifDificilEx {background: red;}
 
-img.imgExemplo {
-    width: 50%;
+
+
+
+
+/*Exemplo da imagem 2*/
+
+
+div#exemplo2 {font-weight: bold;}
+div#exemplo2 #container {
+    text-align: center;
+    display: inline-block;
 }
-img#imgExemplo5 {
-    width: 20%;
+
+div#exemplo2 div.ordem {
+    display: inline-block;
+    color: rgb(0, 81, 255);
+    margin-right: 10px;
+    font-size: 1.5em;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+div#exemplo2 div#botaoIniciarEx, div#exemplo2 div#Ex0 {
+    padding: 15px;
+    background: green;
+    border-radius: 5px;
+    display: inline-block;
+    box-shadow: 0px 0px 10px black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div#exemplo2 div#Ex0 { 
+    box-shadow: 0px 0px 10px green;
+    margin: 5px;
+}
+
+
+
+
+
+
+/*Exemplo da imagem 3*/
+
+
+
+div#exemplo3 #container {
+    text-align: center;
+    display: inline-block;
+    margin-left: 50px;
+}
+
+div#exemplo3 div.text {
+    color: rgb(0, 81, 255);
+}
+
+div#exemplo3 div#somaSinal {
+    font-size: 3em;
+    display: inline-block;
+    margin-left: -57px;
+    position: relative;
+    top: 40px;
+}
+
+div#exemplo3 div#botaoIniciarEx, div#exemplo3 div#Ex0 {
+    padding: 15px;
+    background: green;
+    border-radius: 5px;
+    display: inline-block;
+    box-shadow: 0px 0px 10px black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+div#exemplo3 div#Ex0 { 
+    box-shadow: 0px 0px 10px green;
+    margin: 5px;
+}
+
+div#exemplo3 div#textErrada1 {
+    position: relative;
+    height: 0;
+    top: -2em;
+    left: -100px;
+}
+
+div#exemplo3 div#barra0 {
+    height: 2px;
+    background: rgb(0, 81, 255);
+    width: 50px;
+    position: relative;
+    top: -18px;
+    left: -37px;
+}
+
+div#exemplo3 div#barra1 {
+    height: 2px;
+    background: rgb(0, 81, 255);
+    width: 20px;
+    transform: rotate(70deg);
+    top: -10px;
+    left: 6px;
+    position: relative;
+}
+
+div#exemplo3 div#textCerta {
+    position: relative;
+    height: 0;
+    top: -2em;
+    right: -60px;
+}
+
+div#exemplo3 div#barra2 {
+    height: 2px;
+    background: rgb(0, 81, 255);
+    width: 26px;
+    transform: rotate(305deg);
+    top: -8px;
+    position: relative;
+    right: -110px;
+}
+
+div#exemplo3 div#barra3 {
+    height: 2px;
+    background: rgb(0, 81, 255);
+    width: 45px;
+    position: relative;
+    top: -20px;
+    right: -130px;
+}
+
+div#exemplo3 div#textErrada2 {
+    position: relative;
+    height: 0;
+    top: -1.2em;
+    right: -125px;
+}
+
+div#exemplo3 div#barra4 {
+    height: 2px;
+    background: rgb(0, 81, 255);
+    width: 32px;
+    transform: rotate(290deg);
+    top: 12px;
+    position: relative;
+    right: -170px;
+}
+
+div#exemplo3 div#barra5 {
+    height: 2px;
+    background: rgb(0, 81, 255);
+    width: 50px;
+    position: relative;
+    top: -5px;
+    right: -191px;
+}
+
+div#exemplo3 div.alternativaEx {
+    padding: 10px;
+    background: grey;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+div#exemplo3 div#errada1Ex, div#exemplo3 div#errada2Ex {
+    border: 3px solid red;
+}
+
+div#exemplo3 div#certaEx {
+    border: 3px solid rgb(0, 187, 0);
+}
+
+
+
+
+
+
+/*Exemplo da imagem 4*/
+
+
+div#exemplo4 #container {
+    text-align: center;
+    display: inline-block;
+    margin-left: 30px;
+}
+
+div#exemplo4 div.text {
+    color: rgb(0, 81, 255);
+}
+
+div#exemplo4 div#somaSinal {
+    font-size: 2em;
+    margin: -15px 0px -20px 0px;
+}
+
+div#exemplo4 div#botaoIniciarEx, div#exemplo4 div#Ex0 {
+    padding: 15px;
+    background: green;
+    border-radius: 5px;
+    display: inline-block;
+    box-shadow: 0px 0px 10px black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+div#exemplo4 div#Ex0 { 
+    box-shadow: 0px 0px 10px green;
+    margin: 5px;
+    background: rgb(0, 81, 255);
+}
+
+div#exemplo4 div#textErradas {
+    position: relative;
+    height: 0;
+    top: -2em;
+    left: -110px;
+}
+
+div#exemplo4 div#barra0 {
+    height: 2px;
+    background: rgb(0, 81, 255);
+    width: 50px;
+    position: relative;
+    top: -18px;
+    left: -50px;
+}
+
+div#exemplo4 div#barra1 {
+    height: 2px;
+    background: rgb(0, 81, 255);
+    width: 20px;
+    transform: rotate(70deg);
+    top: -10px;
+    left: -7px;
+    position: relative;
+}
+
+div#exemplo4 div#textCerta {
+    position: relative;
+    height: 0;
+    top: -2em;
+    right: -110px;
+}
+
+div#exemplo4 div#barra2 {
+    height: 2px;
+    background: rgb(0, 81, 255);
+    width: 26px;
+    transform: rotate(305deg);
+    top: -8px;
+    position: relative;
+    right: -155px;
+}
+
+div#exemplo4 div#barra3 {
+    height: 2px;
+    background: rgb(0, 81, 255);
+    width: 45px;
+    position: relative;
+    top: -20px;
+    right: -175px;
+}
+
+div#exemplo4 div#containerErradas, div#exemplo4 div#containerCerta {
+    display: inline-block;
+    border-radius: 10px;
+}
+
+div#exemplo4 div#containerErradas {
+    border: 3px solid red;
+}
+
+div#exemplo4 div#containerCerta {
+    border: 3px solid green;
+}
+
+div#exemplo4 div.alternativaEx {
+    padding: 10px;
+    background: grey;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+div#exemplo4 div#certa1Ex {
+    background: rgb(0, 81, 255);
+}
+
+
+
+
+
+
+
+
+/*Exemplo da imagem 5*/
+
+
+
+div#exemplo5 #container {
+    text-align: center;
+    display: inline-block;
+    margin-left: 50px;
+}
+
+div#exemplo5 div#botaoIniciarEx, div#exemplo5 div#Ex0 {
+    padding: 15px;
+    background: green;
+    border-radius: 5px;
+    display: inline-block;
+    box-shadow: 0px 0px 10px black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+div#exemplo5 div#Ex0 { 
+    box-shadow: 0px 0px 10px green;
+    margin: 5px;
+}
+
+div#exemplo5 div.alternativaEx {
+    padding: 10px;
+    background: grey;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+div#exemplo5 div#certa1Ex, div#exemplo5 div#certa2Ex {
+    background: green;
+}
+
+div#exemplo5 div#certa3Ex, div#exemplo5 div#certa4Ex {
+    background: rgb(0, 81, 255);
+}
+
+
+
+
+
+
+
+
+
+
+/*Exemplo da imagem 6*/
+
+
+div#exemplo6 header#cabecalhoEx {
+    font-family: 'Black Ops One', cursive;
+    text-align: center;
+    color: rgb(0, 45, 141);
+    background: whitesmoke;
+    width: 100%;
+    height: 50px;
+    user-select: none;
+}
+div#exemplo6 div.cabecalhoButtonsEx {
+    font-size: 200%;
+    height: 50px;
+    width: 50px;
+}
+
+div#exemplo6 div#niveisEx {
+    transform: rotate(90deg);
+    padding-top: 10px;
+    position: relative;
+    top: -5px;
+    left: 0;
+}
+
+div#exemplo6 h1#nomeSiteEx {
+    color: rgb(40, 108, 255);
+    margin: 5px;
+    position: relative;
+    top: -57px;
+}
+
+div#exemplo6 h1#nomeSiteEx span {
+    color: rgb(0, 45, 141);
+}
+
+div#exemplo6 div#cincosEx {
+    height: 5px;
+    background: orangered;
+    position: relative;
+    top: -57px;
+}
+
+div#exemplo6 div#cronometroEx {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    position: relative;
+    float: right;
+    right: 50px;
+    top: -60px;
+}
+div#exemplo6 div#restartEx {
+    padding-top: 5px;
+    height: 45px;
+    color: rgb(0, 45, 141);
+    position: relative;
+    float: right;
+    top: -60px;
+    right: -30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Parte de responsividade!*/
+
+
+@media (max-width: 400px) {
+    div.exemplo {font-size: 0.7em;}
+
+    div#exemplo2 div.ordem {
+        display: block;
+    }
+
+
+
+
+
+    div#exemplo3 #container {
+        margin-left: 10px;
+    }
+
+    div#exemplo3 div#somaSinal {
+        font-size: 3em;
+        display: inline-block;
+        margin-left: -44px;
+        position: relative;
+        top: 35px;
+    }
+    
+    div#exemplo3 div#textErrada1 {
+        position: relative;
+        height: 0;
+        top: -2em;
+        left: -80px;
+    }
+    
+    div#exemplo3 div#barra0 {
+        height: 2px;
+        background: rgb(0, 81, 255);
+        width: 37px;
+        position: relative;
+        top: -14px;
+        left: -21px;
+    }
+    
+    div#exemplo3 div#barra1 {
+        height: 2px;
+        background: rgb(0, 81, 255);
+        width: 20px;
+        transform: rotate(70deg);
+        top: -7px;
+        left: 8px;
+        position: relative;
+    }
+    
+    div#exemplo3 div#textCerta {
+        position: relative;
+        height: 0;
+        top: -2em;
+        right: -50px;
+    }
+    
+    div#exemplo3 div#barra2 {
+        height: 2px;
+        background: rgb(0, 81, 255);
+        width: 26px;
+        transform: rotate(305deg);
+        top: -3px;
+        position: relative;
+        right: -93px;
+    }
+    
+    div#exemplo3 div#barra3 {
+        height: 2px;
+        background: rgb(0, 81, 255);
+        width: 30px;
+        position: relative;
+        top: -16px;
+        right: -113px;
+    }
+    
+    div#exemplo3 div#textErrada2 {
+        position: relative;
+        height: 0;
+        top: -1.2em;
+        right: -105px;
+    }
+    
+    div#exemplo3 div#barra4 {
+        height: 2px;
+        background: rgb(0, 81, 255);
+        width: 32px;
+        transform: rotate(290deg);
+        top: 12px;
+        position: relative;
+        right: -145px;
+    }
+    
+    div#exemplo3 div#barra5 {
+        height: 2px;
+        background: rgb(0, 81, 255);
+        width: 38px;
+        position: relative;
+        top: -5px;
+        right: -166px;
+    }
+
+
+
+
+
+    div#exemplo4 div#somaSinal {
+        margin: -10px 0px -12px 0px;
+    }
+
+    div#exemplo4 div#textErradas {
+        position: relative;
+        height: 0;
+        top: -2.3em;
+        left: -90px;
+    }
+    
+    div#exemplo4 div#barra0 {
+        height: 2px;
+        background: rgb(0, 81, 255);
+        width: 40px;
+        position: relative;
+        top: -18px;
+        left: -35px;
+    }
+    
+    div#exemplo4 div#barra1 {
+        height: 2px;
+        background: rgb(0, 81, 255);
+        width: 20px;
+        transform: rotate(70deg);
+        top: -10px;
+        left: -2px;
+        position: relative;
+    }
+
+    div#exemplo4 div#textCerta {
+        position: relative;
+        height: 0;
+        top: -2.3em;
+        right: -85px;
+    }
+    
+    div#exemplo4 div#barra2 {
+        height: 2px;
+        background: rgb(0, 81, 255);
+        width: 26px;
+        transform: rotate(305deg);
+        top: -8px;
+        position: relative;
+        right: -125px;
+    }
+    
+    div#exemplo4 div#barra3 {
+        height: 2px;
+        background: rgb(0, 81, 255);
+        width: 30px;
+        position: relative;
+        top: -20px;
+        right: -145px;
+    }
+
+
+
+
+
+
+
+
+
+
+    div#exemplo6 div.cabecalhoButtonsEx, div#exemplo6 div#cronometroEx {
+        display: none;
+    }
+
+    div#exemplo6 h1#nomeSiteEx {
+        top: 10px;
+    }
+
+    div#exemplo6 div#cincosEx {
+        top: 15px;
+    }
 }
