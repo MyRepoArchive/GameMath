@@ -21,8 +21,14 @@ function mudarTema(tema) {
     if(tema == 'white') {
         document.querySelector('#estilo').href = 'css/estilo.css'
         document.querySelector('#estiloRegras').href = 'css/regras.css'
+        window.localStorage.setItem('tema', '');
     } else {
         document.querySelector('#estilo').href = 'css/estiloDark.css'
         document.querySelector('#estiloRegras').href = 'css/regrasDark.css'
+        window.localStorage.setItem('tema', 'Dark');
     }
 }
+
+const tema = window.localStorage.getItem('tema') || '';
+document.querySelector('#estilo').href = `css/estilo${tema}.css`
+document.querySelector('#estiloRegras').href = `css/regras${tema}.css`
