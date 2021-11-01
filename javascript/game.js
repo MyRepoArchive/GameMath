@@ -28,10 +28,10 @@ function tipoCalcMenu() {
 
 function mudarTema(tema) {
     if(tema == 'white') {
-        document.querySelector('#estilo').href = '../css/estilo.css'
-        document.querySelector('#estiloGame').href = '../css/game.css'
+        document.querySelector('#estilo').href = 'css/estilo.css'
+        document.querySelector('#estiloGame').href = 'css/game.css'
     } else {
-        document.querySelector('#estilo').href = '../css/estiloDark.css'
-        document.querySelector('#estiloGame').href = '../css/gameDark.css'
+        document.querySelector('#estilo').href = 'css/estiloDark.css'
+        document.querySelector('#estiloGame').href = 'css/gameDark.css'
     }
 }
