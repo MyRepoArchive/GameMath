@@ -30,5 +30,5 @@ function mudarTema(tema) {
 }
 
 const tema = window.localStorage.getItem('tema') || '';
-document.querySelector('#estilo').href = `css/estilo${tema}.css`
-document.querySelector('#estiloRegras').href = `css/regras${tema}.css`
+document.querySelector('#estilo').href = `./css/estilo${tema}.css`
+document.querySelector('#estiloRegras').href = `./css/regras${tema}.css`
